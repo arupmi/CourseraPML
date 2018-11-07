@@ -105,7 +105,7 @@ confusionMatrix(prediction, testing$classe)
 
 ## Prediction on Test Data
 
-** Decistion Tree Prediction
+** Decision Tree Prediction
 
 ```{r testprediction, echo=FALSE}
 predictionDT <- predict(modFitDT, dt_testing, type = "class")
@@ -119,3 +119,6 @@ predictionRF <- predict(modFitRF, dt_testing, type = "class")
 predictionRF
 ```
 
+*** Conclusion
+
+Based on the above analysis, it can be stated that the Random Forest Model definitely provides a much more accurate prediction for this set of data.
